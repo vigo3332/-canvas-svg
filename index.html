@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="renderer" content="webkit">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="创客匠人" />
+    <title>元宵节祝福神器</title>
+    <style type="text/css">
+        .vg-bg-black{
+           background-color: #333;
+        }
+        .img-box {
+            position: fixed;bottom:0;left:0;
+            width: 100%;
+            z-index: 98;
+        }
+        .vg-padding-sm { padding: 10px; }
+        .hidden-box { widows: 100%;overflow-x: scroll; }
+        .hidden-box::-webkit-scrollbar {display:none}
+        .img-wrap { width: 600px; height: 80px;  }
+        .img-li { width:50px;margin-right: 0.5rem; border:2px solid #fff; }
+        .img-li.active { border: 2px solid #f1c100; }
+        .img-li img { width: 100%; }
+        .note { position: fixed; top: 0; left: 0; width:100%;height: 100%; background-color: rgba(0,0,0,0.8);}
+        .note-box { position: absolute; top: 10%;left: 50%; margin-left: -115px; width: 230px; height: 260px; background-color: #fff; border-radius: 10px;z-index: 9999; }
+        .close-btn { position: absolute;top: 6px; right: 6px; }
+        .vg-fl { float: left; }
+        img { width: 100% }
+    </style>
+    
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>  
+</head>
+<body>
+<section>
+    <div class=" vg-padding-lg vg-hfull">
+    <div class="pic" id="picBox">
+    
+    <!-- <canvas id="myCanvas"></canvas> -->
+    </div>
+    <div style="display: none" class="svg-wrap">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="200px" height="200px" viewBox="0 0 200 200"><defs><rect id="r0" width="5" height="5" fill="#000000"></rect></defs><rect x="0" y="0" width="200" height="200" fill="#fefefe"></rect><use x="27" y="27" xlink:href="#r0"></use><use x="32" y="27" xlink:href="#r0"></use><use x="37" y="27" xlink:href="#r0"></use><use x="42" y="27" xlink:href="#r0"></use><use x="47" y="27" xlink:href="#r0"></use><use x="52" y="27" xlink:href="#r0"></use><use x="57" y="27" xlink:href="#r0"></use><use x="67" y="27" xlink:href="#r0"></use><use x="72" y="27" xlink:href="#r0"></use><use x="102" y="27" xlink:href="#r0"></use><use x="107" y="27" xlink:href="#r0"></use><use x="117" y="27" xlink:href="#r0"></use><use x="122" y="27" xlink:href="#r0"></use><use x="127" y="27" xlink:href="#r0"></use><use x="137" y="27" xlink:href="#r0"></use><use x="142" y="27" xlink:href="#r0"></use><use x="147" y="27" xlink:href="#r0"></use><use x="152" y="27" xlink:href="#r0"></use><use x="157" y="27" xlink:href="#r0"></use><use x="162" y="27" xlink:href="#r0"></use><use x="167" y="27" xlink:href="#r0"></use><use x="27" y="32" xlink:href="#r0"></use><use x="57" y="32" xlink:href="#r0"></use><use x="97" y="32" xlink:href="#r0"></use><use x="102" y="32" xlink:href="#r0"></use><use x="137" y="32" xlink:href="#r0"></use><use x="167" y="32" xlink:href="#r0"></use><use x="27" y="37" xlink:href="#r0"></use><use x="37" y="37" xlink:href="#r0"></use><use x="42" y="37" xlink:href="#r0"></use><use x="47" y="37" xlink:href="#r0"></use><use x="57" y="37" xlink:href="#r0"></use><use x="67" y="37" xlink:href="#r0"></use><use x="82" y="37" xlink:href="#r0"></use><use x="87" y="37" xlink:href="#r0"></use><use x="92" y="37" xlink:href="#r0"></use><use x="97" y="37" xlink:href="#r0"></use><use x="102" y="37" xlink:href="#r0"></use><use x="127" y="37" xlink:href="#r0"></use><use x="137" y="37" xlink:href="#r0"></use><use x="147" y="37" xlink:href="#r0"></use><use x="152" y="37" xlink:href="#r0"></use><use x="157" y="37" xlink:href="#r0"></use><use x="167" y="37" xlink:href="#r0"></use><use x="27" y="42" xlink:href="#r0"></use><use x="37" y="42" xlink:href="#r0"></use><use x="42" y="42" xlink:href="#r0"></use><use x="47" y="42" xlink:href="#r0"></use><use x="57" y="42" xlink:href="#r0"></use><use x="67" y="42" xlink:href="#r0"></use><use x="72" y="42" xlink:href="#r0"></use><use x="82" y="42" xlink:href="#r0"></use><use x="107" y="42" xlink:href="#r0"></use><use x="112" y="42" xlink:href="#r0"></use><use x="122" y="42" xlink:href="#r0"></use><use x="137" y="42" xlink:href="#r0"></use><use x="147" y="42" xlink:href="#r0"></use><use x="152" y="42" xlink:href="#r0"></use><use x="157" y="42" xlink:href="#r0"></use><use x="167" y="42" xlink:href="#r0"></use><use x="27" y="47" xlink:href="#r0"></use><use x="37" y="47" xlink:href="#r0"></use><use x="42" y="47" xlink:href="#r0"></use><use x="47" y="47" xlink:href="#r0"></use><use x="57" y="47" xlink:href="#r0"></use><use x="67" y="47" xlink:href="#r0"></use><use x="72" y="47" xlink:href="#r0"></use><use x="77" y="47" xlink:href="#r0"></use><use x="82" y="47" xlink:href="#r0"></use><use x="92" y="47" xlink:href="#r0"></use><use x="112" y="47" xlink:href="#r0"></use><use x="122" y="47" xlink:href="#r0"></use><use x="127" y="47" xlink:href="#r0"></use><use x="137" y="47" xlink:href="#r0"></use><use x="147" y="47" xlink:href="#r0"></use><use x="152" y="47" xlink:href="#r0"></use><use x="157" y="47" xlink:href="#r0"></use><use x="167" y="47" xlink:href="#r0"></use><use x="27" y="52" xlink:href="#r0"></use><use x="57" y="52" xlink:href="#r0"></use><use x="72" y="52" xlink:href="#r0"></use><use x="87" y="52" xlink:href="#r0"></use><use x="97" y="52" xlink:href="#r0"></use><use x="112" y="52" xlink:href="#r0"></use><use x="122" y="52" xlink:href="#r0"></use><use x="127" y="52" xlink:href="#r0"></use><use x="137" y="52" xlink:href="#r0"></use><use x="167" y="52" xlink:href="#r0"></use><use x="27" y="57" xlink:href="#r0"></use><use x="32" y="57" xlink:href="#r0"></use><use x="37" y="57" xlink:href="#r0"></use><use x="42" y="57" xlink:href="#r0"></use><use x="47" y="57" xlink:href="#r0"></use><use x="52" y="57" xlink:href="#r0"></use><use x="57" y="57" xlink:href="#r0"></use><use x="67" y="57" xlink:href="#r0"></use><use x="77" y="57" xlink:href="#r0"></use><use x="87" y="57" xlink:href="#r0"></use><use x="97" y="57" xlink:href="#r0"></use><use x="107" y="57" xlink:href="#r0"></use><use x="117" y="57" xlink:href="#r0"></use><use x="127" y="57" xlink:href="#r0"></use><use x="137" y="57" xlink:href="#r0"></use><use x="142" y="57" xlink:href="#r0"></use><use x="147" y="57" xlink:href="#r0"></use><use x="152" y="57" xlink:href="#r0"></use><use x="157" y="57" xlink:href="#r0"></use><use x="162" y="57" xlink:href="#r0"></use><use x="167" y="57" xlink:href="#r0"></use><use x="72" y="62" xlink:href="#r0"></use><use x="82" y="62" xlink:href="#r0"></use><use x="92" y="62" xlink:href="#r0"></use><use x="97" y="62" xlink:href="#r0"></use><use x="112" y="62" xlink:href="#r0"></use><use x="117" y="62" xlink:href="#r0"></use><use x="27" y="67" xlink:href="#r0"></use><use x="32" y="67" xlink:href="#r0"></use><use x="37" y="67" xlink:href="#r0"></use><use x="42" y="67" xlink:href="#r0"></use><use x="57" y="67" xlink:href="#r0"></use><use x="67" y="67" xlink:href="#r0"></use><use x="92" y="67" xlink:href="#r0"></use><use x="97" y="67" xlink:href="#r0"></use><use x="107" y="67" xlink:href="#r0"></use><use x="112" y="67" xlink:href="#r0"></use><use x="117" y="67" xlink:href="#r0"></use><use x="132" y="67" xlink:href="#r0"></use><use x="147" y="67" xlink:href="#r0"></use><use x="152" y="67" xlink:href="#r0"></use><use x="157" y="67" xlink:href="#r0"></use><use x="167" y="67" xlink:href="#r0"></use><use x="62" y="72" xlink:href="#r0"></use><use x="67" y="72" xlink:href="#r0"></use><use x="72" y="72" xlink:href="#r0"></use><use x="102" y="72" xlink:href="#r0"></use><use x="107" y="72" xlink:href="#r0"></use><use x="112" y="72" xlink:href="#r0"></use><use x="117" y="72" xlink:href="#r0"></use><use x="122" y="72" xlink:href="#r0"></use><use x="127" y="72" xlink:href="#r0"></use><use x="132" y="72" xlink:href="#r0"></use><use x="137" y="72" xlink:href="#r0"></use><use x="147" y="72" xlink:href="#r0"></use><use x="167" y="72" xlink:href="#r0"></use><use x="32" y="77" xlink:href="#r0"></use><use x="37" y="77" xlink:href="#r0"></use><use x="42" y="77" xlink:href="#r0"></use><use x="47" y="77" xlink:href="#r0"></use><use x="52" y="77" xlink:href="#r0"></use><use x="57" y="77" xlink:href="#r0"></use><use x="97" y="77" xlink:href="#r0"></use><use x="102" y="77" xlink:href="#r0"></use><use x="112" y="77" xlink:href="#r0"></use><use x="117" y="77" xlink:href="#r0"></use><use x="132" y="77" xlink:href="#r0"></use><use x="137" y="77" xlink:href="#r0"></use><use x="142" y="77" xlink:href="#r0"></use><use x="147" y="77" xlink:href="#r0"></use><use x="157" y="77" xlink:href="#r0"></use><use x="162" y="77" xlink:href="#r0"></use><use x="27" y="82" xlink:href="#r0"></use><use x="37" y="82" xlink:href="#r0"></use><use x="47" y="82" xlink:href="#r0"></use><use x="67" y="82" xlink:href="#r0"></use><use x="82" y="82" xlink:href="#r0"></use><use x="87" y="82" xlink:href="#r0"></use><use x="92" y="82" xlink:href="#r0"></use><use x="97" y="82" xlink:href="#r0"></use><use x="102" y="82" xlink:href="#r0"></use><use x="127" y="82" xlink:href="#r0"></use><use x="142" y="82" xlink:href="#r0"></use><use x="152" y="82" xlink:href="#r0"></use><use x="167" y="82" xlink:href="#r0"></use><use x="32" y="87" xlink:href="#r0"></use><use x="57" y="87" xlink:href="#r0"></use><use x="62" y="87" xlink:href="#r0"></use><use x="72" y="87" xlink:href="#r0"></use><use x="82" y="87" xlink:href="#r0"></use><use x="112" y="87" xlink:href="#r0"></use><use x="122" y="87" xlink:href="#r0"></use><use x="142" y="87" xlink:href="#r0"></use><use x="152" y="87" xlink:href="#r0"></use><use x="157" y="87" xlink:href="#r0"></use><use x="32" y="92" xlink:href="#r0"></use><use x="42" y="92" xlink:href="#r0"></use><use x="47" y="92" xlink:href="#r0"></use><use x="52" y="92" xlink:href="#r0"></use><use x="72" y="92" xlink:href="#r0"></use><use x="77" y="92" xlink:href="#r0"></use><use x="82" y="92" xlink:href="#r0"></use><use x="92" y="92" xlink:href="#r0"></use><use x="122" y="92" xlink:href="#r0"></use><use x="137" y="92" xlink:href="#r0"></use><use x="162" y="92" xlink:href="#r0"></use><use x="167" y="92" xlink:href="#r0"></use><use x="32" y="97" xlink:href="#r0"></use><use x="37" y="97" xlink:href="#r0"></use><use x="42" y="97" xlink:href="#r0"></use><use x="47" y="97" xlink:href="#r0"></use><use x="52" y="97" xlink:href="#r0"></use><use x="57" y="97" xlink:href="#r0"></use><use x="72" y="97" xlink:href="#r0"></use><use x="87" y="97" xlink:href="#r0"></use><use x="97" y="97" xlink:href="#r0"></use><use x="107" y="97" xlink:href="#r0"></use><use x="112" y="97" xlink:href="#r0"></use><use x="117" y="97" xlink:href="#r0"></use><use x="122" y="97" xlink:href="#r0"></use><use x="127" y="97" xlink:href="#r0"></use><use x="132" y="97" xlink:href="#r0"></use><use x="152" y="97" xlink:href="#r0"></use><use x="157" y="97" xlink:href="#r0"></use><use x="162" y="97" xlink:href="#r0"></use><use x="167" y="97" xlink:href="#r0"></use><use x="42" y="102" xlink:href="#r0"></use><use x="47" y="102" xlink:href="#r0"></use><use x="62" y="102" xlink:href="#r0"></use><use x="77" y="102" xlink:href="#r0"></use><use x="87" y="102" xlink:href="#r0"></use><use x="92" y="102" xlink:href="#r0"></use><use x="102" y="102" xlink:href="#r0"></use><use x="107" y="102" xlink:href="#r0"></use><use x="122" y="102" xlink:href="#r0"></use><use x="132" y="102" xlink:href="#r0"></use><use x="142" y="102" xlink:href="#r0"></use><use x="147" y="102" xlink:href="#r0"></use><use x="162" y="102" xlink:href="#r0"></use><use x="52" y="107" xlink:href="#r0"></use><use x="57" y="107" xlink:href="#r0"></use><use x="67" y="107" xlink:href="#r0"></use><use x="82" y="107" xlink:href="#r0"></use><use x="102" y="107" xlink:href="#r0"></use><use x="117" y="107" xlink:href="#r0"></use><use x="127" y="107" xlink:href="#r0"></use><use x="132" y="107" xlink:href="#r0"></use><use x="147" y="107" xlink:href="#r0"></use><use x="162" y="107" xlink:href="#r0"></use><use x="37" y="112" xlink:href="#r0"></use><use x="42" y="112" xlink:href="#r0"></use><use x="52" y="112" xlink:href="#r0"></use><use x="62" y="112" xlink:href="#r0"></use><use x="87" y="112" xlink:href="#r0"></use><use x="92" y="112" xlink:href="#r0"></use><use x="102" y="112" xlink:href="#r0"></use><use x="117" y="112" xlink:href="#r0"></use><use x="127" y="112" xlink:href="#r0"></use><use x="142" y="112" xlink:href="#r0"></use><use x="157" y="112" xlink:href="#r0"></use><use x="162" y="112" xlink:href="#r0"></use><use x="27" y="117" xlink:href="#r0"></use><use x="37" y="117" xlink:href="#r0"></use><use x="42" y="117" xlink:href="#r0"></use><use x="47" y="117" xlink:href="#r0"></use><use x="52" y="117" xlink:href="#r0"></use><use x="57" y="117" xlink:href="#r0"></use><use x="62" y="117" xlink:href="#r0"></use><use x="67" y="117" xlink:href="#r0"></use><use x="77" y="117" xlink:href="#r0"></use><use x="82" y="117" xlink:href="#r0"></use><use x="87" y="117" xlink:href="#r0"></use><use x="102" y="117" xlink:href="#r0"></use><use x="107" y="117" xlink:href="#r0"></use><use x="152" y="117" xlink:href="#r0"></use><use x="157" y="117" xlink:href="#r0"></use><use x="42" y="122" xlink:href="#r0"></use><use x="47" y="122" xlink:href="#r0"></use><use x="87" y="122" xlink:href="#r0"></use><use x="107" y="122" xlink:href="#r0"></use><use x="112" y="122" xlink:href="#r0"></use><use x="117" y="122" xlink:href="#r0"></use><use x="122" y="122" xlink:href="#r0"></use><use x="132" y="122" xlink:href="#r0"></use><use x="147" y="122" xlink:href="#r0"></use><use x="157" y="122" xlink:href="#r0"></use><use x="32" y="127" xlink:href="#r0"></use><use x="42" y="127" xlink:href="#r0"></use><use x="52" y="127" xlink:href="#r0"></use><use x="57" y="127" xlink:href="#r0"></use><use x="67" y="127" xlink:href="#r0"></use><use x="82" y="127" xlink:href="#r0"></use><use x="87" y="127" xlink:href="#r0"></use><use x="92" y="127" xlink:href="#r0"></use><use x="102" y="127" xlink:href="#r0"></use><use x="107" y="127" xlink:href="#r0"></use><use x="112" y="127" xlink:href="#r0"></use><use x="117" y="127" xlink:href="#r0"></use><use x="127" y="127" xlink:href="#r0"></use><use x="132" y="127" xlink:href="#r0"></use><use x="137" y="127" xlink:href="#r0"></use><use x="142" y="127" xlink:href="#r0"></use><use x="147" y="127" xlink:href="#r0"></use><use x="152" y="127" xlink:href="#r0"></use><use x="157" y="127" xlink:href="#r0"></use><use x="67" y="132" xlink:href="#r0"></use><use x="77" y="132" xlink:href="#r0"></use><use x="87" y="132" xlink:href="#r0"></use><use x="92" y="132" xlink:href="#r0"></use><use x="97" y="132" xlink:href="#r0"></use><use x="107" y="132" xlink:href="#r0"></use><use x="117" y="132" xlink:href="#r0"></use><use x="127" y="132" xlink:href="#r0"></use><use x="147" y="132" xlink:href="#r0"></use><use x="152" y="132" xlink:href="#r0"></use><use x="157" y="132" xlink:href="#r0"></use><use x="162" y="132" xlink:href="#r0"></use><use x="167" y="132" xlink:href="#r0"></use><use x="27" y="137" xlink:href="#r0"></use><use x="32" y="137" xlink:href="#r0"></use><use x="37" y="137" xlink:href="#r0"></use><use x="42" y="137" xlink:href="#r0"></use><use x="47" y="137" xlink:href="#r0"></use><use x="52" y="137" xlink:href="#r0"></use><use x="57" y="137" xlink:href="#r0"></use><use x="82" y="137" xlink:href="#r0"></use><use x="87" y="137" xlink:href="#r0"></use><use x="92" y="137" xlink:href="#r0"></use><use x="112" y="137" xlink:href="#r0"></use><use x="117" y="137" xlink:href="#r0"></use><use x="122" y="137" xlink:href="#r0"></use><use x="127" y="137" xlink:href="#r0"></use><use x="137" y="137" xlink:href="#r0"></use><use x="147" y="137" xlink:href="#r0"></use><use x="152" y="137" xlink:href="#r0"></use><use x="162" y="137" xlink:href="#r0"></use><use x="27" y="142" xlink:href="#r0"></use><use x="57" y="142" xlink:href="#r0"></use><use x="72" y="142" xlink:href="#r0"></use><use x="122" y="142" xlink:href="#r0"></use><use x="127" y="142" xlink:href="#r0"></use><use x="147" y="142" xlink:href="#r0"></use><use x="162" y="142" xlink:href="#r0"></use><use x="167" y="142" xlink:href="#r0"></use><use x="27" y="147" xlink:href="#r0"></use><use x="37" y="147" xlink:href="#r0"></use><use x="42" y="147" xlink:href="#r0"></use><use x="47" y="147" xlink:href="#r0"></use><use x="57" y="147" xlink:href="#r0"></use><use x="77" y="147" xlink:href="#r0"></use><use x="87" y="147" xlink:href="#r0"></use><use x="97" y="147" xlink:href="#r0"></use><use x="102" y="147" xlink:href="#r0"></use><use x="107" y="147" xlink:href="#r0"></use><use x="112" y="147" xlink:href="#r0"></use><use x="117" y="147" xlink:href="#r0"></use><use x="127" y="147" xlink:href="#r0"></use><use x="132" y="147" xlink:href="#r0"></use><use x="137" y="147" xlink:href="#r0"></use><use x="142" y="147" xlink:href="#r0"></use><use x="147" y="147" xlink:href="#r0"></use><use x="152" y="147" xlink:href="#r0"></use><use x="157" y="147" xlink:href="#r0"></use><use x="162" y="147" xlink:href="#r0"></use><use x="27" y="152" xlink:href="#r0"></use><use x="37" y="152" xlink:href="#r0"></use><use x="42" y="152" xlink:href="#r0"></use><use x="47" y="152" xlink:href="#r0"></use><use x="57" y="152" xlink:href="#r0"></use><use x="67" y="152" xlink:href="#r0"></use><use x="82" y="152" xlink:href="#r0"></use><use x="87" y="152" xlink:href="#r0"></use><use x="97" y="152" xlink:href="#r0"></use><use x="102" y="152" xlink:href="#r0"></use><use x="107" y="152" xlink:href="#r0"></use><use x="132" y="152" xlink:href="#r0"></use><use x="142" y="152" xlink:href="#r0"></use><use x="147" y="152" xlink:href="#r0"></use><use x="167" y="152" xlink:href="#r0"></use><use x="27" y="157" xlink:href="#r0"></use><use x="37" y="157" xlink:href="#r0"></use><use x="42" y="157" xlink:href="#r0"></use><use x="47" y="157" xlink:href="#r0"></use><use x="57" y="157" xlink:href="#r0"></use><use x="67" y="157" xlink:href="#r0"></use><use x="72" y="157" xlink:href="#r0"></use><use x="77" y="157" xlink:href="#r0"></use><use x="82" y="157" xlink:href="#r0"></use><use x="92" y="157" xlink:href="#r0"></use><use x="107" y="157" xlink:href="#r0"></use><use x="112" y="157" xlink:href="#r0"></use><use x="117" y="157" xlink:href="#r0"></use><use x="132" y="157" xlink:href="#r0"></use><use x="142" y="157" xlink:href="#r0"></use><use x="167" y="157" xlink:href="#r0"></use><use x="27" y="162" xlink:href="#r0"></use><use x="57" y="162" xlink:href="#r0"></use><use x="67" y="162" xlink:href="#r0"></use><use x="72" y="162" xlink:href="#r0"></use><use x="82" y="162" xlink:href="#r0"></use><use x="97" y="162" xlink:href="#r0"></use><use x="102" y="162" xlink:href="#r0"></use><use x="117" y="162" xlink:href="#r0"></use><use x="122" y="162" xlink:href="#r0"></use><use x="127" y="162" xlink:href="#r0"></use><use x="142" y="162" xlink:href="#r0"></use><use x="147" y="162" xlink:href="#r0"></use><use x="152" y="162" xlink:href="#r0"></use><use x="162" y="162" xlink:href="#r0"></use><use x="27" y="167" xlink:href="#r0"></use><use x="32" y="167" xlink:href="#r0"></use><use x="37" y="167" xlink:href="#r0"></use><use x="42" y="167" xlink:href="#r0"></use><use x="47" y="167" xlink:href="#r0"></use><use x="52" y="167" xlink:href="#r0"></use><use x="57" y="167" xlink:href="#r0"></use><use x="67" y="167" xlink:href="#r0"></use><use x="77" y="167" xlink:href="#r0"></use><use x="87" y="167" xlink:href="#r0"></use><use x="97" y="167" xlink:href="#r0"></use><use x="102" y="167" xlink:href="#r0"></use><use x="117" y="167" xlink:href="#r0"></use><use x="122" y="167" xlink:href="#r0"></use><use x="127" y="167" xlink:href="#r0"></use><use x="152" y="167" xlink:href="#r0"></use><use x="162" y="167" xlink:href="#r0"></use></svg>
+    </div>
+    <div class="img-box vg-bg-black">
+        <div class="hidden-box">
+            <div class="img-wrap vg-clearfix vg-padding-sm">        
+                <div class="img-li vg-fl active"><img data-sty="1" src="invite/1.jpg"></div>
+                <div class="img-li vg-fl"><img data-sty="2" src="invite/2.jpg"></div>
+                <div class="img-li vg-fl"><img data-sty="2" src="invite/3.jpg"></div>
+                <div class="img-li vg-fl"><img data-sty="2" src="invite/4.jpg"></div>
+                <div class="img-li vg-fl"><img data-sty="1" src="invite/5.jpg"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+    <script>
+        function draw(headimgurl,proLogo,proCodeImg,proTit,nickname,bgurl,wrapImg,nicknameColor,mainColor){
+
+            var source = [{urlv:bgurl,startx:0,starty:0,w:640,h:826},{urlv:wrapImg,startx:82,starty:76,w:480,h:700},{urlv:headimgurl,startx:282,starty:37,w:75,h:75},{urlv:proLogo,startx:112,starty:220,w:420,h:252},{urlv:proCodeImg,startx:150,starty:580,w:158,h:158},{content:nickname,startx:320,starty:140,align:'center',color:nicknameColor},{content:'邀请您共同学习',startx:320,starty:180,align:'center',color:mainColor},{content:proTit,startx:110,starty:510,align:'left',color:mainColor}]
+            var c= document.createElement('canvas');
+            var oPicBox = document.getElementById('picBox');
+            c.width = 640;
+            c.height = 826;
+            var ctx = c.getContext("2d");
+            var that = this;
+            // 绘制图片
+            function drawingImg(n){
+                if(n<4 ){
+                    var img=new Image;
+                    //img.crossOrigin = 'Anonymous'; //解决跨域
+                    img.src=source[n].urlv;
+                    img.onload=function(){
+                        ctx.save();
+                        ctx.drawImage(img,source[n].startx,source[n].starty,source[n].w,source[n].h);
+                        drawingImg(n+1);//递归
+                    }
+                }else if(n<5){
+                    var image = new Image();
+                    image.src = 'data:image/svg+xml;base64,' + window.btoa(unescape(encodeURIComponent(source[n].urlv)));//给图片对象写入base64编码的svg流
+                    image.onload=function(){
+                        ctx.save();
+                        ctx.drawImage(image,source[n].startx,source[n].starty,source[n].w,source[n].h);
+                        drawingImg(n+1);//递归
+                    }
+                }else if(n<8){
+                    ctx.font="20px Microsoft YaHei";
+                    ctx.fillStyle = source[n].color;
+                    lineWidth = 1.0;
+                    ctx.textAlign=source[n].align; 
+                    ctx.fillText(source[n].content,source[n].startx,source[n].starty);  
+                    drawingImg(n+1);//递归
+                }else{
+                    convertCanvasToImage(ctx);
+                } 
+            }
+            drawingImg(0);
+
+            // 保存图片函数
+            function convertCanvasToImage(ctx) {
+                var hc_image = new Image();
+                console.log(ctx)
+                hc_image.crossOrigin = '*'; 
+                hc_image.src = ctx.canvas.toDataURL("image/png");
+                while(oPicBox.hasChildNodes()) //当div下还存在子节点时 循环继续  
+                {  
+                    oPicBox.removeChild(oPicBox.firstChild);  
+                }  
+                oPicBox.appendChild(hc_image);  
+            }
+        }
+        $(function(){
+            var headimgurl = 'invite/b.png';
+            var proLogo = 'invite/d.png';
+            var proTit = '论传统行业转型之路';
+            var nickname = 'Vigo';
+            var proCodeImg = $('.svg-wrap').html();
+            
+            var bgurl = $('.img-li img')[0].src;
+            var styleType = $('.img-li img').eq(0).data('sty'); 
+            var nicknameColor ='';
+            var mainColor ='';
+            var wrapImg = '';
+            if(styleType==1){
+                wrapImg = 'invite/a.png';
+                nicknameColor = '#555';
+                mainColor = '#999';
+            }else{
+                wrapImg = 'invite/f.png';
+                nicknameColor = '#fff';
+                mainColor = '#fff';
+            }
+            draw(headimgurl,proLogo,proCodeImg,proTit,nickname,bgurl,wrapImg,nicknameColor,mainColor);
+            $('.img-li').click(function(){
+                $(this).addClass('active').siblings().removeClass('active');
+                bgurl = $('img',this).attr("src");
+                styleType = $('img',this).data('sty'); 
+                if(styleType==1){
+                    wrapImg = 'invite/a.png';
+                    nicknameColor = '#555';
+                    mainColor = '#999';
+                }else{
+                    wrapImg = 'invite/f.png';
+                    nicknameColor = '#fff';
+                    mainColor = '#fff';
+                }
+                draw(headimgurl,proLogo,proCodeImg,proTit,nickname,bgurl,wrapImg,nicknameColor,mainColor);
+            })
+        })
+    </script>
+    <!-- 用到知识点：convas合成图片和文字,svg转base64位，canvas转base64位 -->
+    <!-- index.html:113 Uncaught DOMException: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported -->
+    <!-- 出现这种情况的解决方法是在服务器环境运行，静态运行是会报错的 -->
+    <!-- 合成图片过程中出现了图片出不来的情况，这种情况采用递归，文字被覆盖的问题，解决方法是先画图，再画文字 -->
+</body>
+</html>
