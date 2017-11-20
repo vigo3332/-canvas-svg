@@ -158,7 +158,7 @@
         })
     </script>
     <!-- 用到知识点：convas合成图片和文字,svg转base64位，canvas转base64位 -->
-    <!-- index.html:113 Uncaught DOMException: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported -->
+    <!--报错： index.html:113 Uncaught DOMException: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported -->
     <!-- 出现这种情况的解决方法是在服务器环境运行，静态运行是会报错的 -->
     <!-- 合成图片过程中出现了图片出不来的情况，这种情况采用递归，文字被覆盖的问题，解决方法是先画图，再画文字 -->
 </body>
